@@ -146,9 +146,17 @@ h1 {
     height: 420px;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+}
 .sb { /* Select Button */
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+.aic { /* Align Items: Center */
+    align-items: center;
 }
