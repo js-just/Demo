@@ -1,6 +1,7 @@
 {
     "builder-file": "File",
     "builder-filecontent": "Content",
-    "builder-filetype": "Type",
-    "builder-language": "Language"
+    "builder-filelanguage": "Language:",
+    "builder-langdropup-collapsed": "Click to expand the drop-up.",
+    "builder-langdropup-expanded": "Click to collapse the drop-up."
 }

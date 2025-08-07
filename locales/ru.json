@@ -1,6 +1,7 @@
 {
     "builder-file": "Файл",
     "builder-filecontent": "Содержание",
-    "builder-filetype": "Тип",
-    "builder-language": "Язык"
+    "builder-filelanguage": "Язык:",
+    "builder-langdropup-collapsed": "Нажмите, чтобы раскрыть раскрывающийся список.",
+    "builder-langdropup-expanded": "Нажмите, чтобы свернуть раскрывающийся список."
 }
