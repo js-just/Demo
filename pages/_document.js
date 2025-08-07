@@ -25,28 +25,28 @@ SOFTWARE.
 */
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 class CustomDocument extends Document {
-  render() {
-    return (
-      <Html>
-        <Head>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
-            <title>Just an Ultimate Site Tool Demo</title>
-        </Head>
-        <body>
-          <Main></Main>
-          <NextScript></NextScript>
-          <div
-            dangerouslySetInnerHTML={{
-              __html:
-                '<script type="text/javascript">document.ondragstart=noselect;document.onselectstart=noselect;document.oncontextmenu=noselect;function noselect(){return false;}</script>',
-            }}
-          ></div>
-        </body>
-      </Html>
-    )
-  }
+    render() {
+        return (
+            <Html>
+                <Head>
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+                    <title>Just an Ultimate Site Tool Demo</title>
+                </Head>
+                <body>
+                    <Main></Main>
+                    <NextScript></NextScript>
+                    <Script id="noselect">
+                        {`
+                            document.ondragstart=noselect;document.onselectstart=noselect;document.oncontextmenu=noselect;function noselect(){return false;}
+                        `}
+                    </Script>
+                </body>
+            </Html>
+        )
+    }
 }
 export default CustomDocument;
