@@ -1,3 +1,5 @@
 {
-    
+    "builder.file": "File",
+    "builder.filecontent": "Content",
+    "builder.filetype": "Type"
 }
