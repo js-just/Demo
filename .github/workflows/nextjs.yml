@@ -66,7 +66,13 @@ jobs:
       - name: Move id to deploy
         run: mv id deploy/id
       - name: Unzip Monaco Editor
-        run: mkdir deploy/third-party && mkdir deploy/third-party/monaco-editor && tar -xvzf third-party/monaco-editor-0.23.0.tgz -C deploy/third-party/monaco-editor
+        run: | 
+          mkdir deploy/third-party && \
+          mkdir deploy/third-party/monaco-editor && \
+          mkdir deploy/third-party/monaco-editor/0.23.0 && \
+          mkdir deploy/third-party/monaco-editor/0.52.2 && \
+          tar -xvzf third-party/monaco-editor-0.23.0.tgz -C deploy/third-party/monaco-editor/0.23.0 && \
+          tar -xvzf third-party/monaco-editor-0.52.2.tgz -C deploy/third-party/monaco-editor/0.52.2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
