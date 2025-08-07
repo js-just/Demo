@@ -27,7 +27,7 @@ SOFTWARE.
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router';
-import { builder as Builder } from '../lib/builder';
+import { Builder } from '../lib/builder';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
