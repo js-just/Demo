@@ -1,5 +1,5 @@
-import './style.css';
 import '../globals.css';
+import './style.css';
 
 import { GlobalProvider } from '../global-context';
 import { NextIntlProvider } from 'next-intl';
