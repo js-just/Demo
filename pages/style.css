@@ -160,3 +160,10 @@ button {
 .aic { /* Align Items - Center */
     align-items: center;
 }
+
+.r2px { /* border Radius - 2PX */
+    border-radius: 2px;
+}
+.ow { /* Outline - White */
+    outline: 4px solid white;
+}
