@@ -7,4 +7,12 @@ module.exports = {
         locales: ['en', 'ru'],
         defaultLocale: "en",
     },
+    webpack: (config) => {
+        config.module.rules.push({
+            test: /\.css$/i,
+            issuer: /\.[jt]sx?$/,
+            use: ['style-loader', 'css-loader'],
+        });
+        return config;
+    },
 }
