@@ -24,17 +24,10 @@ SOFTWARE.
 
 */
 
-.rmo {
-    font-family: "Rubik Mono One", "Rubik", monospace;
+html {
+    font-family: "Rubik", monospace;
 }
-.scp {
-    font-family: "Source Code Pro", monospace;
-}
-.lz {
-    font-family: "Lexend Zetta", sans-serif;
-}
-
-.builder {
-    left: 50%;
-    translate: -50% 0%;
+body {
+    margin: 0;
+    padding: 0;
 }
