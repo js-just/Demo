@@ -15,7 +15,7 @@ module.exports = {
             use: ['style-loader', 'css-loader'],
         });
         if (config.optimization) {
-            config.optimization.minimize = false;
+            config.optimization.minimize = true;
         }
         config.optimization.minimizer.forEach((minimizer) => {
             if (minimizer.options && minimizer.options.terserOptions) {
