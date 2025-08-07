@@ -1,8 +1,8 @@
-import './style.css'
-import '../globals.css'
+import './style.css';
+import '../globals.css';
 
-import { GlobalProvider } from '../global-context'
-import { NextIntlProvider } from 'next-intl'
+import { GlobalProvider } from '../global-context';
+import { NextIntlProvider } from 'next-intl';
 export default function MyApp({ Component, pageProps }) {
   return (
     <NextIntlProvider messages={pageProps?.messages}>
