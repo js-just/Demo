@@ -187,10 +187,10 @@ button {
 
 .du { /* Drop-Up */
     position: absolute;
-    flex-direction: column;
+    flex-direction: column !important;
     bottom: 100%;
     left: calc(24px + 10px);
     padding: 2px 0px;
-    gap: 2px;
+    gap: 2px !important;
     background-color: black;
 }
