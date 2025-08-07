@@ -59,7 +59,7 @@ body {
     border: 2px solid rgba(0,0,0,0.2);
     border-radius: 20px;
 }
-.builder div:not(#monaco) {
+.builder div:not(#monaco):not(#monaco *) {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -85,8 +85,15 @@ h1 {
     -webkit-animation-delay: 0.2s;
 }
 
-.cw { /* Color White */
+.cw { /* Color: White */
     color: white;
+}
+.bb { /* Background: Black */
+    background-color: black;
+}
+.fi { /* Filter: Invert */
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
 
 .ag { /* Animation Glow (Text) */
@@ -137,4 +144,11 @@ h1 {
 
 #monaco {
     height: 420px;
+}
+
+.sb { /* Select Button */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
