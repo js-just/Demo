@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
       - name: npm
         id: install-npm
-        run: npm i && npm install --save-dev style-loader@4.0.0 css-loader@7.1.2 react-monaco-editor@0.59.0 terser@4.8.0
+        run: npm i && npm install --save-dev style-loader@4.0.0 css-loader@7.1.2 terser@4.8.0
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -65,6 +65,8 @@ jobs:
         uses: js-just/_just@v0.0.26
       - name: Move id to deploy
         run: mv id deploy/id
+      - name: Unzip Monaco Editor
+        run: tar -xvzf third-party/monaco-editor-0.23.0.tgz -C deploy/third-party/monaco-editor
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
