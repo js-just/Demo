@@ -62,7 +62,7 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Override with _just
-        uses: js-just/latest@main
+        uses: js-just/_just@v0.0.26
       - name: Move id to deploy
         run: mv id deploy/id
       - name: Upload artifact
