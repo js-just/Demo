@@ -52,6 +52,18 @@ body {
     left: 50%;
     translate: -50% 0%;
 }
+.builder {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.builder div:not(#monaco) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
 h1 {
     margin: 0;
