@@ -7,7 +7,7 @@ module.exports = {
         locales: ['en', 'ru'],
         defaultLocale: "en",
     },
-    swcMinify: false,
+    swcMinify: true,
     webpack: (config) => {
         config.module.rules.push({
             test: /\.css$/i,
