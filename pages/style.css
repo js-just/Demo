@@ -29,6 +29,14 @@ SOFTWARE.
     --g: 0px 0px 12px rgba(255,255,255,0.4); /* Glow */
 }
 
+html {
+    font-family: "Rubik", monospace;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .rmo { /* Rubik Mono One */
     font-family: "Rubik Mono One", "Rubik", monospace;
 }
@@ -39,7 +47,8 @@ SOFTWARE.
     font-family: "Lexend Zetta", sans-serif;
 }
 
-.builder {
+.builder, #monaco {
+    position: relative;
     left: 50%;
     translate: -50% 0%;
 }
@@ -116,6 +125,4 @@ h1 {
 
 #monaco {
     height: 420px;
-    left: 50%;
-    translate: -50% 0%;
 }
