@@ -71,8 +71,8 @@ jobs:
           mkdir deploy/third-party/monaco-editor && \
           tar -xvzf third-party/monaco-editor-0.52.2.tgz -C deploy/third-party/monaco-editor && \
           cp -r deploy/third-party/monaco-editor/package/min/vs deploy/vs && \
-          rm -rf third-party/monaco-editor/package/esm/ && \
-          rm -rf third-party/monaco-editor/package/dev/
+          rm -rf deploy/third-party/monaco-editor/package/esm/ && \
+          rm -rf deploy/third-party/monaco-editor/package/dev/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
