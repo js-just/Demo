@@ -26,8 +26,11 @@ SOFTWARE.
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
+import useMonacoVersion, { defaultMonacoVersion } from '@/lib/monacoversion';
+import { useRouter } from 'next/router';
 class CustomDocument extends Document {
     render() {
+        const router = useRouter();
         return (
             <Html>
                 <Head>
@@ -35,7 +38,7 @@ class CustomDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
                     <title>Just an Ultimate Site Tool Demo</title>
-                    <link rel="stylesheet" data-name="vs/editor/editor.main" href="/third-party/monaco-editor/0.52.2/package/min/vs/editor/editor.main.css" />
+                    <link rel="stylesheet" data-name="vs/editor/editor.main" href={`/third-party/monaco-editor/${useMonacoVersion(router.asPath) || defaultMonacoVersion}/package/min/vs/editor/editor.main.css`} />
                 </Head>
                 <body>
                     <Main></Main>
