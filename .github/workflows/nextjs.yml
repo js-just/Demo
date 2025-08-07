@@ -69,11 +69,8 @@ jobs:
         run: | 
           mkdir deploy/third-party && \
           mkdir deploy/third-party/monaco-editor && \
-          mkdir deploy/third-party/monaco-editor/0.23.0 && \
-          mkdir deploy/third-party/monaco-editor/0.52.2 && \
-          tar -xvzf third-party/monaco-editor-0.23.0.tgz -C deploy/third-party/monaco-editor/0.23.0 && \
-          tar -xvzf third-party/monaco-editor-0.52.2.tgz -C deploy/third-party/monaco-editor/0.52.2 && \
-          cp -r deploy/third-party/monaco-editor/0.52.2/package/min/vs deploy/vs
+          tar -xvzf third-party/monaco-editor-0.52.2.tgz -C deploy/third-party/monaco-editor && \
+          cp -r deploy/third-party/monaco-editor/package/min/vs deploy/vs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
