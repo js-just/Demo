@@ -8,18 +8,15 @@ module.exports = {
         defaultLocale: "en",
     },
     swcMinify: false,
-    terserOptions: {
-        compress: false,
-        mangle: false,
-    },
-    optimizeCss: false,
-    presets: ['next/babel'],
     webpack: (config) => {
         config.module.rules.push({
             test: /\.css$/i,
             issuer: /\.[jt]sx?$/,
             use: ['style-loader', 'css-loader'],
         });
+        if (config.optimization) {
+            config.optimization.minimize = false;
+        }
         config.optimization.minimizer.forEach((minimizer) => {
             if (minimizer.options && minimizer.options.terserOptions) {
                 minimizer.options.terserOptions.compress = false;
