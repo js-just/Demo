@@ -20,7 +20,7 @@ module.exports = {
         config.optimization.minimizer.forEach((minimizer) => {
             if (minimizer.options && minimizer.options.terserOptions) {
                 minimizer.options.terserOptions.compress = false;
-                minimizer.options.terserOptions.mangle = false;
+                minimizer.options.terserOptions.mangle = true;
             }
         });
         return config;
