@@ -85,13 +85,13 @@ h1 {
     -webkit-animation-delay: 0.2s;
 }
 
-.cw { /* Color: White */
+.cw { /* Color - White */
     color: white;
 }
-.bb { /* Background: Black */
+.bb { /* Background - Black */
     background-color: black;
 }
-.fi { /* Filter: Invert */
+.fi { /* Filter - Invert */
     filter: invert(1);
     -webkit-filter: invert(1);
 }
@@ -157,6 +157,6 @@ button {
     gap: 10px;
 }
 
-.aic { /* Align Items: Center */
+.aic { /* Align Items - Center */
     align-items: center;
 }
