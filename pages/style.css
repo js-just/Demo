@@ -167,3 +167,12 @@ button {
 .ow { /* Outline - White */
     outline: 4px solid white;
 }
+
+.cp { /* Cursor - Pointer */
+    cursor: pointer;
+}
+
+.t { /* Transition */
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}

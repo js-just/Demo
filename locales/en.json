@@ -3,5 +3,6 @@
     "builder-filecontent": "Content",
     "builder-filelanguage": "Language:",
     "builder-langdropup-collapsed": "Click to expand the drop-up.",
-    "builder-langdropup-expanded": "Click to collapse the drop-up."
+    "builder-langdropup-expanded": "Click to collapse the drop-up.",
+    "builder-langdropup-switchToLang": "Switch to "
 }

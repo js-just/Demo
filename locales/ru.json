@@ -3,5 +3,6 @@
     "builder-filecontent": "Содержание",
     "builder-filelanguage": "Язык:",
     "builder-langdropup-collapsed": "Нажмите, чтобы раскрыть раскрывающийся список.",
-    "builder-langdropup-expanded": "Нажмите, чтобы свернуть раскрывающийся список."
+    "builder-langdropup-expanded": "Нажмите, чтобы свернуть раскрывающийся список.",
+    "builder-langdropup-switchToLang": "Переключится на "
 }
