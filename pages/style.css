@@ -116,4 +116,6 @@ h1 {
 
 #monaco {
     height: 420px;
+    left: 50%;
+    translate: -50% 0%;
 }

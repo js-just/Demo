@@ -1,5 +1,6 @@
 {
     "builder-file": "File",
     "builder-filecontent": "Content",
-    "builder-filetype": "Type"
+    "builder-filetype": "Type",
+    "builder-language": "Language"
 }
