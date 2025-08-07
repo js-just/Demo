@@ -1,0 +1,24 @@
+{
+  "name": "just_an_ultimate_site_tool_demo",
+  "version": "1.0.0",
+  "description": "Try _just",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "author": "JustStudio.",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "next-intl": "2.10.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "devDependencies": {}
+}
