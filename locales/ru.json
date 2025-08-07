@@ -1,5 +1,5 @@
 {
-    "builder.file": "Файл",
-    "builder.filecontent": "Содержание",
-    "builder.filetype": "Тип"
+    "builder-file": "Файл",
+    "builder-filecontent": "Содержание",
+    "builder-filetype": "Тип"
 }

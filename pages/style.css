@@ -24,6 +24,26 @@ SOFTWARE.
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 html {
-    
+    font-family: "Rubik", monospace;
+}
+
+.bg {
+    background: #b2e3f7;
+    background: -webkit-linear-gradient(148deg, rgba(178, 227, 247, 1) 0%, rgba(87, 115, 199, 1) 50%, rgba(107, 54, 214, 1) 100%);
+    background: -moz-linear-gradient(148deg, rgba(178, 227, 247, 1) 0%, rgba(87, 115, 199, 1) 50%, rgba(107, 54, 214, 1) 100%);
+    background: linear-gradient(148deg, rgba(178, 227, 247, 1) 0%, rgba(87, 115, 199, 1) 50%, rgba(107, 54, 214, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#B2E3F7", endColorstr="#6B36D6", GradientType=0);
+}
+
+.rmo {
+    font-family: "Rubik Mono One", "Rubik", monospace;
+}
+.scp {
+    font-family: "Source Code Pro", monospace;
+}
+.lz {
+    font-family: "Lexend Zetta", sans-serif;
 }

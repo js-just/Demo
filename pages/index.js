@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>Just an Ultimate Site Tool Demo</h1>
+      <h1 className='.bg .lz'>Just an Ultimate Site Tool Demo</h1>
       <Builder />
     </>
   );

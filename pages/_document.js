@@ -30,6 +30,8 @@ class CustomDocument extends Document {
     return (
       <Html>
         <Head>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <title>Just an Ultimate Site Tool Demo</title>
         </Head>
         <body>
