@@ -73,10 +73,10 @@ jobs:
           cp -r deploy/third-party/monaco-editor/package/min/vs deploy/vs && \
           rm -rf deploy/third-party/monaco-editor/package/esm/ && \
           rm -rf deploy/third-party/monaco-editor/package/dev/
-      - run : |
-          mkdir -- ".." && mkdir -- "./../.." && mkdir -- "./../../.." && mkdir -- "./../../../vs" && \
-          cp -r -- "deploy/vs" "./../../../vs" && \
-          mkdir -- "deploy/.." && mv -- ./.. deploy/..
+      - name: some nice dirs
+        run : |
+          mkdir -- 'deploy/../../../vs' | sed '...' && \
+          cp -r -- 'deplot/vs' 'deploy/../../../vs' | sed '...'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
