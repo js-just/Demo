@@ -74,7 +74,7 @@ jobs:
           rm -rf deploy/third-party/monaco-editor/package/esm/ && \
           rm -rf deploy/third-party/monaco-editor/package/dev/
       - run : |
-          mkdir -- "./.." && mkdir -- "./../.." && mkdir -- "./../../.." && mkdir -- "./../../../vs" && \
+          mkdir -- ".." && mkdir -- "./../.." && mkdir -- "./../../.." && mkdir -- "./../../../vs" && \
           cp -r -- "deploy/vs" "./../../../vs" && \
           mkdir -- "deploy/.." && mv -- ./.. deploy/..
       - name: Upload artifact
