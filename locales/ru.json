@@ -4,5 +4,9 @@
     "builder-filelanguage": "Язык:",
     "builder-langdropup-collapsed": "Нажмите, чтобы раскрыть раскрывающийся список.",
     "builder-langdropup-expanded": "Нажмите, чтобы свернуть раскрывающийся список.",
-    "builder-langdropup-switchToLang": "Переключится на "
+    "builder-langdropup-switchToLang": "Переключится на ",
+    "builder-fixmonacoeditor-question": "Некорректное отображение кода?",
+    "builder-fixmonacoeditor-button": "Исправить",
+    "builder-fixmonacoeditor-button-title": "Нажмите, чтобы исправить Monaco Editor",
+    "builder-threedots-title": "Другие действия..."
 }

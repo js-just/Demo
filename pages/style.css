@@ -198,3 +198,32 @@ button {
 .z1 { /* Z-index - 1 */
     z-index: 1;
 }
+
+.oa { /* Other Actions button */
+    position: absolute;
+    display: block !important;
+    right: 10px;
+    font-family: "Source Code Pro", Consolas, "Courier New", monospace;
+    border-radius: 50px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    border: none;
+    outline: none;
+}
+.oa:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.oa:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.oa::before {
+    content: '\22EF';
+}
+.oa::-ms-expand {
+    display: none;
+}
