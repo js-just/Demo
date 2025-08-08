@@ -27,7 +27,6 @@ SOFTWARE.
 var require = { paths: { 'vs': 'third-party/monaco-editor/package/min/vs' } };
 const originalFetch = window.fetch;
 window.fetch = function(input, init) {
-    console.log(input);
     let url;
     if (typeof input === 'string') {
         url = input;
