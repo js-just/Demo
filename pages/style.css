@@ -194,3 +194,7 @@ button {
     gap: 2px !important;
     background-color: black;
 }
+
+.z1 { /* Z-index - 1 */
+    z-index: 1;
+}
