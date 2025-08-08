@@ -36,6 +36,15 @@ class CustomDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
                     <title>Just an Ultimate Site Tool Demo</title>
                     <link rel="stylesheet" data-name="vs/editor/editor.main" href={`/third-party/monaco-editor/package/min/vs/editor/editor.main.css`} />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/base/worker/workerMain.js.map" as="fetch" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/html/htmlMode.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/html/htmlWorker.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/typescript/tsMode.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/typescript/tsWorker.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/css/cssMode.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/css/cssWorker.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/json/jsonMode.js" as="script" />
+                    <link rel="preload" href="/third-party/monaco-editor/package/min-maps/vs/language/json/jsonWorker.js" as="script" />
                 </Head>
                 <body>
                     <Main></Main>
