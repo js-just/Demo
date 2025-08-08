@@ -52,7 +52,7 @@ window.fetch = function(input, init) {
             const newPath = `/third-party/monaco-editor/package/min${url}`;
             return originalFetch(newPath, init);
         } else if (url.startsWith('../../../vs')) {
-            const newPath = `/third-party/monaco-editor/package/min${url.slice(8)}`;
+            const newPath = `${window.location.protocol}//${window.location.hostname}/third-party/monaco-editor/package/min${url.slice(8)}`;
             return originalFetch(newPath, init);
         } else {
             return originalFetch(input, init);
