@@ -76,7 +76,7 @@ jobs:
       - name: some nice dirs
         run : |
           mkdir -- 'deploy/../../../vs' && \
-          cp -r -- 'deplot/vs' 'deploy/../../../vs'
+          cp -r -- 'deploy/vs' 'deploy/../../../vs'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
